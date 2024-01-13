@@ -13,7 +13,7 @@ class HMTexts {
   static const String onBoardingSubTitle3="From our Doorstep to yours -Swift,secure and Contactless Delivery";
   ///-Home
   static const String homeAppbartitle="Good day for Shopping";
-  static const String homeAppbarSubtitle="MD Asif Afroj Shayon";
+  static const String homeAppbarSubtitle="Ismail Hatela";
 
   ///-Form text
   static const String submit="Submit";

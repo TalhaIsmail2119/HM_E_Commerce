@@ -1,5 +1,5 @@
 ///---Api Using ---\\\
 
 class APIConstants {
-  static const String SSecretAPIKEY="1234";
+  static const String hmSecretAPIKEY="1234";
 }

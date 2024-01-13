@@ -1,4 +1,4 @@
-class SPricingCalculator {
+class HMPricingCalculator {
   ///--calculate price based on tax and shipping--\\\
 
   static double calculateTotalPrice(double productPrice,String location){

@@ -1,6 +1,6 @@
 ///in this class contains all thr App images in String formats
 
-class HM {
+class HMImages {
 
   ///---App logo----just add color on ,where to use
     static const String darkApplogo="assets/logos/s-Splash-dark.png";
