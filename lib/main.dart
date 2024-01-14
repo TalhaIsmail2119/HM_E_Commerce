@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hm_e_commerce/features/authentication/screens/login/login_page.dart';
+import 'package:hm_e_commerce/utils/theme/theme.dart';
 
 void main() {
 
@@ -7,8 +9,6 @@ void main() {
   // Todo : Await Native Splash
   // Todo : Initialize Firebase
   // Todo : Initialize Authentication
-
-
   runApp(const MyApp());
 }
 
@@ -19,13 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
+      title: 'HM E_Commerce',
+      themeMode: ThemeMode.system,
+      theme: HMAppTheme.lighttheme,
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const LogInPage()
     );
   }
 }
