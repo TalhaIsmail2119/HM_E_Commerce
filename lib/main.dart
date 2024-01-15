@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:hm_e_commerce/features/authentication/screens/login/login_page.dart';
 import 'package:hm_e_commerce/utils/theme/theme.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'HM E_Commerce',
       themeMode: ThemeMode.system,
       theme: HMAppTheme.lighttheme,

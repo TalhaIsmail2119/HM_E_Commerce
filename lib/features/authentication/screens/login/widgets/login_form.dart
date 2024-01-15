@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:hm_e_commerce/features/authentication/screens/signup/sign_up_page.dart';
 import 'package:hm_e_commerce/utils/constants/sizes.dart';
 import 'package:hm_e_commerce/utils/constants/text_strings.dart';
 import 'package:iconsax/iconsax.dart';
@@ -65,7 +68,8 @@ class login_form extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                },
                 child: const Text(HMTexts.signIn),
               ),
             ),
@@ -76,7 +80,9 @@ class login_form extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(()=> const SignUpPage());
+                },
                 child: const Text(HMTexts.createAccount),
               ),
             ),
