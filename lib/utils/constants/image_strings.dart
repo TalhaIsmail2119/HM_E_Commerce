@@ -15,10 +15,10 @@ class HMImages {
     static const String onBoardingImage3="assets/images/on_boarding_images/three.gif";
     static const String onBoardingImage4="assets/images/on_boarding_images/four.gif";
     ///---Animation Images
-    static const String productsIllustration="assets/images/animations/shayon-line-workout.gif";
-    static const String productssalelustration="assets/images/animations/shayon-line-sale.gif";
-    static const String staticSuccessIllustration="assets/images/animations/shayon-line-success.png";
-    static const String deliveredInPlaneIllustration="assets/images/animations/shayon-line-come-back-later.png";
-    static const String deliveredEmailIllustration="assets/images/animations/shayon-line-man-receives-a-mail.png";
-    static const String verifyIllustration="assets/images/animations/assets/images/animations/shayon-line-travel-backpack-with-passport-and-air-ticket.gif";
+    static const String productsIllustration="assets/images/animations/hm-line-workout.gif";
+    static const String productssalelustration="assets/images/animations/hm-line-sale.gif";
+    static const String staticSuccessIllustration="assets/images/animations/hm-line-success.png";
+    static const String deliveredInPlaneIllustration="assets/images/animations/hm-line-come-back-later.png";
+    static const String deliveredEmailIllustration="assets/images/animations/hm-line-man-receives-a-mail.png";
+    static const String verifyIllustration="assets/images/animations/assets/images/animations/hm-line-travel-backpack-with-passport-and-air-ticket.gif";
 }

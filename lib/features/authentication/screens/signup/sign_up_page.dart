@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:hm_e_commerce/common/widgets_login_signup/form_divider.dart';
+import 'package:hm_e_commerce/common/widgets_login_signup/social_buttons.dart';
+import 'package:hm_e_commerce/features/authentication/screens/signup/sign_up_form.dart';
+import 'package:hm_e_commerce/utils/constants/colors.dart';
 import 'package:hm_e_commerce/utils/constants/sizes.dart';
 import 'package:hm_e_commerce/utils/constants/text_strings.dart';
+import 'package:hm_e_commerce/utils/helpers/helper_function.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignUpPage extends StatelessWidget {
@@ -8,6 +14,7 @@ class SignUpPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final dark= HMHelperFunctions.isDarkMode(context);
     return Scaffold(
       appBar: AppBar(),
       body: SingleChildScrollView(
@@ -21,94 +28,19 @@ class SignUpPage extends StatelessWidget {
               const SizedBox(height: HMSizes.spaceBtwSections),
 
               /// Form
-              Form(
-                child: Column(
-                  children: [
-                    /// First & last Name
-                    Row(
-                      children: [
-                        Expanded(
-                          child: TextFormField(
-                            expands: false,
-                            decoration: const InputDecoration(
-                                labelText: HMTexts.firstName,
-                                prefixIcon: Icon(Iconsax.user)),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: HMSizes.spaceBtwInputFields,
-                        ),
-                        Expanded(
-                          child: TextFormField(
-                            expands: false,
-                            decoration: const InputDecoration(
-                                labelText: HMTexts.lastName,
-                                prefixIcon: Icon(Iconsax.user)),
-                          ),
-                        ),
-                      ],
-                    ),
+              HMSignUpForm(dark: dark),
+              const SizedBox(
+                height: HMSizes.spaceBtwSections,
+              ),
+              ///Divider
+              form_divider(dividerText: HMTexts.orSignUpWith.capitalize!),
+              const SizedBox(
+                height: HMSizes.spaceBtwSections,
+              ),
 
-                    /// Username
-                    TextFormField(
-                      expands: false,
-                      decoration: const InputDecoration(
-                          labelText: HMTexts.username,
-                          prefixIcon: Icon(Iconsax.user_edit)),
-                    ),
-                    const SizedBox(
-                      width: HMSizes.spaceBtwInputFields,
-                    ),
+              /// Social Buttons
+              const social_buttons(),
 
-                    /// Email
-                    TextFormField(
-                      decoration: const InputDecoration(
-                          labelText: HMTexts.username,
-                          prefixIcon: Icon(Iconsax.user_edit)),
-                    ),
-                    const SizedBox(
-                      width: HMSizes.spaceBtwInputFields,
-                    ),
-
-                    /// Phone Number
-                    TextFormField(
-                      decoration: const InputDecoration(
-                          labelText: HMTexts.phoneNo,
-                          prefixIcon: Icon(Iconsax.call)),
-                    ),
-                    const SizedBox(
-                      width: HMSizes.spaceBtwInputFields,
-                    ),
-
-                    /// Password
-                    TextFormField(
-                      decoration: const InputDecoration(
-                        labelText: HMTexts.password,
-                        prefixIcon: Icon(Iconsax.password_check),
-                        suffixIcon: Icon(Iconsax.eye_slash),
-                      ),
-                    ),
-
-                    const SizedBox(
-                      width: HMSizes.spaceBtwSections,
-                    ),
-
-                    /// terms & Condition CheckBox
-                    Row(
-                      children: [
-                        SizedBox(
-                          height: 24,
-                            width: 24,
-                            child:
-                                Checkbox(value: true, onChanged: (value) {})),
-                        const SizedBox(width: HMSizes.spaceBtwItems,),
-                      ],
-                    )
-
-                    /// Sign Up Button
-                  ],
-                ),
-              )
             ],
           ),
         ),
@@ -116,3 +48,5 @@ class SignUpPage extends StatelessWidget {
     );
   }
 }
+
+
