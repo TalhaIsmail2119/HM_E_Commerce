@@ -3,6 +3,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:hm_e_commerce/features/authentication/screens/password_configuration/forget_password.dart';
 import 'package:hm_e_commerce/features/authentication/screens/signup/sign_up_page.dart';
+import 'package:hm_e_commerce/navigation%20_menu.dart';
 import 'package:hm_e_commerce/utils/constants/sizes.dart';
 import 'package:hm_e_commerce/utils/constants/text_strings.dart';
 import 'package:iconsax/iconsax.dart';
@@ -70,6 +71,7 @@ class login_form extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
+                  Get.to(()=> const NavigationMenu());
                 },
                 child: const Text(HMTexts.signIn),
               ),
