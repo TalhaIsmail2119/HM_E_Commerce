@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hm_e_commerce/common/widgets/appbar/appbar.dart';
 import 'package:hm_e_commerce/common/widgets/custom_shape/container/circular_container.dart';
 import 'package:hm_e_commerce/common/widgets/custom_shape/container/primary_header_container.dart';
 import 'package:hm_e_commerce/common/widgets/custom_shape/curved_edges/curved_edges.dart';
@@ -17,7 +18,9 @@ class HomePage extends StatelessWidget {
           HMPrimaryHeaderContainer(
             child: Column(
               children: [
+                HMAppBar(
 
+                ),
               ],
             ),
           ),
