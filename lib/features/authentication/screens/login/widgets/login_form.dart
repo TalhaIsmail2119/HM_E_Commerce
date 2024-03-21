@@ -71,7 +71,7 @@ class login_form extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  Get.to(()=> const NavigationMenu());
+                  Get.to(()=>  NavigationMenu());
                 },
                 child: const Text(HMTexts.signIn),
               ),

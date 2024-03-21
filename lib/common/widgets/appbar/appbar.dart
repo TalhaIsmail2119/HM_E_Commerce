@@ -5,13 +5,13 @@ import 'package:hm_e_commerce/utils/formatters/device_utility.dart';
 import 'package:iconsax/iconsax.dart';
 
 class HMAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const HMAppBar({
+   HMAppBar({
     super.key,
     this.title,
     this.actions,
     this.leadingIcon,
     this.leadingOnPressed,
-    this.showBackArrow=true,
+    this.showBackArrow=false,
 
 
   });
